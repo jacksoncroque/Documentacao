@@ -1,0 +1,12 @@
+Estrututas Importantes:
+
+Primary Keys: chaves primárias, usadas para garantir integridade dos dados, onde uma informação se torna única (como um CPF);
+Foreign Keys: chaves usadas para relacionar id's de diferentes bases;
+Constraints: aplicam restrições, como nos casos onde uma informação não pode ser nula (NOT NULL).
+
+LINGUAGEM SQL:
+
+LIMIT:comando usado para limitar uma quantia, mas sem um comando, vai acabar consultando os primeiros dados que o banco encontrar, sem ordem; 
+
+' ' = nome de um campo existente - " " nome para nomear um campo criado;
+
