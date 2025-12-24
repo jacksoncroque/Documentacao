@@ -1,0 +1,28 @@
+Estruturas Importantes:
+
+Primary Keys:
+Usadas para garantir a integridade dos dados, tornando uma informação única na tabela (por exemplo, um CPF).
+Foreign Keys:
+Chaves utilizadas para relacionar IDs entre diferentes tabelas ou bases de dados.
+Constraints (Restrições):
+Aplicam regras aos dados, como impedir que um campo fique vazio (NOT NULL), entre outras validações.
+
+COMANDOS:
+
+LIMIT:
+Comando usado para limitar a quantidade de registros retornados em uma consulta.
+Quando utilizado sem um ORDER BY, o banco retorna os primeiros dados que encontrar, sem garantia de ordem.
+
+Uso de aspas:
+
+' ' → usado para valores literais (texto).
+
+" " → usado para nomear ou referenciar campos criados ou aliases.
+
+LIKE: 
+O caractere '%', usado em uma string após o comando LIKE serve para indicar que o que vem antes e/ou depois dele
+não é relevante na busca.
+    SELECT * 
+    FROM xxxxxx
+    WHERE xxxx LIKE '%Coelho';
+Neste caso o SQL entende que o que vem antes de Coelho não importa.

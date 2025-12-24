@@ -1,4 +1,0 @@
-Estrututas Importantes:
-
-Primary Keys: chaves primárias, usadas para garantir integridade dos dados, onde uma informação se torna única (como um CPF);
-Constraints: aplicam restrições, como nos casos onde uma informação não pode ser nula (NOT NULL)
