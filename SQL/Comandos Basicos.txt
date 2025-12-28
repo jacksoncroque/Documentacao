@@ -26,3 +26,15 @@ não é relevante na busca.
     FROM xxxxxx
     WHERE xxxx LIKE '%Coelho';
 Neste caso o SQL entende que o que vem antes de Coelho não importa.
+
+CASE WHEN: permite retornar valores diferentes conforme várias condições. O banco avalia os casos em ordem,
+de cima para baixo, e retorna o resultado do primeiro WHEN verdadeiro, usando o ELSE como valor padrão caso 
+nenhuma condição seja atendida. IPORTANTE SEMPRE ORGANIZAR DO MAIS ESPECÍFIXO PRO MAIS AMPLO.
+
+AGREGAÇÕES:
+Contagem de Linhas: COUNT (*) -- Contagem de linhas não nulas
+Conatgem de Linhas Distintas: COUNT (DISTINCT COLUMN)
+Somas: SUM(COLUMN)
+Média: AVG(COLUMN)
+Máxima: MAX(COLUMN)
+
