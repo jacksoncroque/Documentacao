@@ -76,4 +76,4 @@ SELECT IdProduto,
        SUM(vlProduto * QtdeProduto)
 FROM transacao_produto
 GROUP BY IdProduto 
-ORDER BY SUM(vlProduto * QtdeProduto) DESC
+ORDER BY SUM(vlProduto * QtdeProduto) DESC;
