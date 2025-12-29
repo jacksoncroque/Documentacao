@@ -40,8 +40,18 @@ WHERE IdProduto = 15
 
 /* LISTAR TODAS AS TRANSAÇÕES ADICIONANDO UMA COLUNA NOVA SINALIZANDO “ALTO”, “MÉDIO” E “BAIXO” PARA O
  VALOR DOS PONTOS (<10; <500; >=500) */
+SELECT idCliente,
+       qtdePontos,
+       IdTransacao,
+       CASE      
+              WHEN QtdePontos < 10 THEN 'BAIXO'    
+              WHEN qtdePontos < 500 THEN 'MÉDIO'
+              ELSE 'ALTO'
+              END AS FlQntdPontos
+FROM transacoes
+ORDER BY QtdePontos DESC
+
  SELECT *, QtdePontos>=500 AS 'ALTO',
         QtdePontos<10 AS 'BAIXO',
         QtdePontos<500 AND QtdePontos>10 AS 'MÉDIO'
  FROM transacoes
- 
